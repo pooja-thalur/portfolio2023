@@ -4,9 +4,11 @@ import { logo } from "../assets/images";
 
 const navbar = () => {
   return (
+    <div>
     <header className='header'>
-      <NavLink to='/'>
-        <img src={logo} alt='logo' className='ml-1 w-18 h-18 object-unset' />
+      
+      <NavLink to='/' className={({ isActive }) => isActive ? "text-blue-600 flex text-lg gap-6 font-medium" : "text-black flex text-lg gap-6 font-medium"} >
+        Home
       </NavLink>
       <nav className='flex text-lg gap-6 font-medium'>
         <NavLink to='/about' className={({ isActive }) => isActive ? "text-blue-600" : "text-black" }>
@@ -14,9 +16,10 @@ const navbar = () => {
         </NavLink>
         <NavLink to='/projects' className={({ isActive }) => isActive ? "text-blue-600" : "text-black"}>
           Projects
-        </NavLink>
-      </nav>
+        </NavLink>      
+      </nav> 
     </header>
+    </div>
     
   )
 }

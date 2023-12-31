@@ -31,7 +31,7 @@ const renderContent = {
     ),
     3: (
         <InfoBox 
-            text ={<span>Worked on a lot of projects including backend using <br/>JAVA, Python, AWS, Data Analytics. etc. , some of which are detailed here</span>  }
+            text ={<span>Worked on a multiple projects involving backend using <br/>JAVA, Python, AWS, Kubernetes etc. ; Data Analytics, Frontend , some of which are detailed here</span>  }
             link ="/projects"
             btnText={"Visit Projects"}
        />

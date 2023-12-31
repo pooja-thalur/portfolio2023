@@ -7,7 +7,7 @@ import CTA from '../components/CTA'
 
 const About = () => {
   return (
-    <section className=' max-container bg-gray-800 text-gray-100 body-font'>
+    <section className=' max-container bg-blue-150 text-gray-100 body-font'>
       <h1 className='head-text'> Hello,  I am <span className='blue-gradient_text font-semibold drop-shadow'> Pooja Thalur</span>
       </h1>
 
@@ -21,7 +21,7 @@ const About = () => {
       </div>
 
       <div className='py-10 flex flex-col '>
-        <h3 className='subhead'>My Skills</h3>
+        <h3 className='subhead-text'>My Skills</h3>
           <div className='mt-16 flex flex-wrap gap-12'>
               {skills.map((skill, index) => (
                 <div className='block-container w-20 h-20'>
