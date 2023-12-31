@@ -66,12 +66,10 @@ const Home = () => {
 
   const [ islandScale, islandPosition, rotation ] = adjustIslandForScreenSize();  
   const [ planeScale, planePosition ] = adjustPlaneForScreenSize();
-  console.log("planePosition", planePosition );
+ // console.log("planePosition", planePosition );
   return (
     <section className='w-full h-screen relative'>
-      <div className='absolute top-8 left-0 right-0 z-10 flex items-center justify-center'>
-          {currentStage && <HomeInfo currentStage={currentStage} />}
-      </div>
+      
       <Canvas className={"w-full h-screen bg-transparent ${isRotating ? cursor-grabbing : cursor-grab}"}
       camera={{ near: 0.1, far: 1000}}>
 
@@ -102,7 +100,9 @@ const Home = () => {
       </Suspense>
      
       </Canvas>
-      <p>Made this with lot of effort, Please do go around and explore</p>
+      <div className='absolute top-8 left-0 right-0 z-10 flex items-center justify-center'>
+          {currentStage && <HomeInfo currentStage={currentStage} />}
+      </div>
     </section>
   )
 }
